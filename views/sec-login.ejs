@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2>Login Form</h2>
+        </div>
+        <form id="form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" placeholder="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" placeholder="password"><br><br>
+            <input type="hidden" id="_csrf" name="_csrf" value="<%- csrfToken %>">
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+    <script src="sec-login.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
